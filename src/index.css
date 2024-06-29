@@ -1,13 +1,94 @@
+/* Import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+
+/* Apply global styles */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Karla', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Typography styles */
+
+.display-title {
+    font-family: 'Markazi Text', serif;
+    font-weight: 500;
+    font-size: 64pt;
+}
+
+.subtitle {
+    font-family: 'Markazi Text', serif;
+    font-weight: 400;
+    font-size: 40pt;
+}
+
+.lead-text {
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    font-size: 18pt;
+}
+
+.section-title {
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    font-size: 20pt;
+    text-transform: uppercase;
+}
+
+.category-title {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 16pt;
+}
+
+.card-title {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 18pt;
+}
+
+.paragraph-text {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+    line-height: 1.5;
+    max-width: 65ch;
+    /* Approx 65 characters per line */
+}
+
+.highlight-text {
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    font-size: 16pt;
+}
+
+
+/* Responsive typography adjustments */
+
+@media (max-width: 768px) {
+    .display-title {
+        font-size: 48pt;
+    }
+    .subtitle {
+        font-size: 30pt;
+    }
+    .lead-text {
+        font-size: 16pt;
+    }
+    .section-title {
+        font-size: 18pt;
+    }
+    .category-title {
+        font-size: 14pt;
+    }
+    .card-title {
+        font-size: 16pt;
+    }
+    .paragraph-text {
+        font-size: 14pt;
+    }
+    .highlight-text {
+        font-size: 14pt;
+    }
 }

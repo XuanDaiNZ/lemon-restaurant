@@ -1,0 +1,288 @@
+    /* HeroSection.css */
+    
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        padding-left: 130px;
+        background-color: rgb(73, 94, 87);
+        color: aliceblue;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .display-title {
+        margin: 0;
+        color: rgb(195, 165, 16);
+    }
+    
+    .subtitle {
+        margin: 0;
+    }
+    
+    .hero-image img {
+        width: 50%;
+        height: 300px;
+        object-fit: cover;
+        max-width: 100%;
+        border-radius: 8px;
+        top: 20px;
+        padding-left: 100px;
+    }
+    
+    .hero button {
+        background-color: rgb(244, 206, 20);
+        border-radius: 15px;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        margin: 0;
+        border: none;
+        cursor: pointer;
+    }
+    
+    @media (max-width: 768px) {
+        .hero {
+            grid-template-columns: 1fr;
+            padding-left: 10px;
+            padding-right: 5px;
+            height: auto;
+        }
+        .hero-image img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0px;
+        }
+    }
+    /*HighlightsSections*/
+    
+    .highlights {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        padding: 50px 20px;
+        background-color: #f0f0f0;
+        grid-template-areas: "header header header" "article1 article2 article3";
+    }
+    /* Header styles */
+    
+    .highlights-header {
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    .highlights-header h2 {
+        margin: 0;
+    }
+    
+    .highlights-header button {
+        background-color: rgb(244, 206, 20);
+        border-radius: 15px;
+        font-size: 1.3rem;
+        padding: 10px 20px;
+        margin: 0;
+        border: none;
+        cursor: pointer;
+    }
+    /* Content styles */
+    
+    .highlights article {
+        background-color: aliceblue;
+        border-radius: 10px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .highlights article>img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .highlights article a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        padding: 10px 0px;
+    }
+    
+    .highlights article a img {
+        margin-left: auto;
+    }
+    
+    .highlights article a span {
+        color: black;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    .highlights article h2,
+    .highlights article h3,
+    .highlights article span,
+    .highlights article p {
+        padding: 0 20px;
+        margin: 10px 0;
+    }
+    /* Content areas */
+    
+    .highlights-contents-1 {
+        grid-area: article1;
+    }
+    
+    .highlights-contents-2 {
+        grid-area: article2;
+    }
+    
+    .highlights-contents-3 {
+        grid-area: article3;
+    }
+    /* Responsive styles */
+    
+    @media (max-width: 1024px) {
+        .highlights {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "header header" "article1 article2" "article3 article3";
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .highlights {
+            grid-template-columns: 1fr;
+            grid-template-areas: "header" "article1" "article2" "article3";
+        }
+        .highlights-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .highlights-header button {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .highlights article a img {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+    }
+    /*Testimonials*/
+    
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+    
+    .testimonials article {
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .testimonials article img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .testimonials article p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    /* Responsive styles */
+    
+    @media (max-width: 1024px) {
+        .testimonials {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .testimonials {
+            grid-template-columns: 1fr;
+        }
+    }
+    /*AboutSection*/
+    
+    .about {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+    
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        grid-column: span 2;
+    }
+    
+    .about-header {
+        margin-bottom: 20px;
+    }
+    
+    .about-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        grid-column: span 1;
+    }
+    
+    .about-image img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .about h3 {
+        color: rgb(140, 161, 71);
+    }
+    
+    @media (max-width: 768px) {
+        .about-image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding-top: 120px;
+        }
+        .about-image img {
+            width: 120px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .about-header {
+            margin: 0;
+            padding: 0;
+        }
+        .about-content {
+            padding: 0;
+            text-align: start;
+        }
+    }

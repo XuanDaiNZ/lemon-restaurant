@@ -1,9 +1,9 @@
-import Logo from '../source/icons_assets/Logo.svg'
+import React from "react";
 
 function Nav() {
   return (
-  <nav>    
-    <ul>
+  <nav className="nav">    
+    <ul className="">
       <li><a href="/home">Home</a></li>        
       <li><a href="/about">About Us</a></li>
       <li><a href="/blog">Menu</a></li>  
@@ -11,7 +11,6 @@ function Nav() {
       <li><a href="/order">Order online</a></li>
       <li><a href="/login">Login</a></li>
     </ul>
-    <a href='/image'><img src={Logo} alt='logo'/></a>
   </nav>
   )
 }

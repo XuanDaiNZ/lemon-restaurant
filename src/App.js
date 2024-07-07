@@ -1,17 +1,27 @@
 import React from 'react';
-import Headers from './components/Headers/Headers';
-import Main from './components/Mains/Main';
-import Footer from './components/Footers/Footer';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import HomePage from './pages/HomePage';
+import AboutUs from './pages/AboutUs';
+import CallToAction from './pages/CallToAction';
+import Specials from './pages/Specials';
+import BookingPage from './pages/BookingPage';
+import ConfirmedBooking from './pages/ConfirmedBooking';
 
 function App() {
   return (
-    <div className='app-container'>
-      <Headers />
-      <Main />
-      <Footer />
-    </div>
+    
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/call-to-action" element={<CallToAction />} />
+        <Route path="/menu" element={<Specials />} />
+        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/confirmed" element={<ConfirmedBooking />} />
+      </Routes>
+   
   );
 }
 
 export default App;
+

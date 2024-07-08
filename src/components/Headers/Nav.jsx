@@ -19,8 +19,8 @@ function Nav() {
         <li><Link to="/about-us">About Us</Link></li>
         <li><Link to="/menu">Menu</Link></li>
         <li><Link to="/booking">Reservations</Link></li>
-        <li><a href="/order">Order</a></li>
-        <li><a href="/login">Login</a></li>
+        <li><Link to="/updating">Order</Link></li>
+        <li><Link to="/updating">Login</Link></li>
       </ul>
     </nav>
   );

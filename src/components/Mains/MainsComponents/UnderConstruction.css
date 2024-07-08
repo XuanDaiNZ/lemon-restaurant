@@ -1,0 +1,9 @@
+.under-construction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #343a40;
+}

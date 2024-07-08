@@ -7,6 +7,8 @@ import CallToAction from './pages/CallToAction';
 import Specials from './pages/Specials';
 import BookingPage from './pages/BookingPage';
 import ConfirmedBooking from './pages/ConfirmedBooking';
+import UpDatingPage from './pages/UpDatingPage';
+
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
       <Route path="/menu" element={<Specials />} />
       <Route path="/booking" element={<BookingPage />} />
       <Route path="/confirmed" element={<ConfirmedBooking />} />
-      <Route path="/test" element={<div>Test Route</div>} /> {/* Route thử nghiệm */}
+      <Route path="/updating" element={<UpDatingPage />} /> {/* Coming soon */}
       <Route path="*" element={<div>404 Not Found</div>} />
     </Routes>
   );

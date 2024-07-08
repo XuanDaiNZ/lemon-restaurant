@@ -15,6 +15,7 @@ body {
     font-family: 'Markazi Text', serif;
     font-weight: 500;
     font-size: 64pt;
+    line-height: 0.75em;
 }
 
 .subtitle {

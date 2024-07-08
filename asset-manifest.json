@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lemon-restaurant/static/css/main.e3358f89.css",
-    "main.js": "/lemon-restaurant/static/js/main.0aaf4f5d.js",
+    "main.js": "/lemon-restaurant/static/js/main.898cea18.js",
     "static/js/453.99c1801e.chunk.js": "/lemon-restaurant/static/js/453.99c1801e.chunk.js",
     "static/media/restauranfood.jpg": "/lemon-restaurant/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
     "static/media/res2.jpg": "/lemon-restaurant/static/media/res2.4232af364e8af86032a2.jpg",
@@ -13,11 +13,11 @@
     "index.html": "/lemon-restaurant/index.html",
     "static/media/hamburger.svg": "/lemon-restaurant/static/media/hamburger.0da6f67ced800ab909f63d5144de37ee.svg",
     "main.e3358f89.css.map": "/lemon-restaurant/static/css/main.e3358f89.css.map",
-    "main.0aaf4f5d.js.map": "/lemon-restaurant/static/js/main.0aaf4f5d.js.map",
+    "main.898cea18.js.map": "/lemon-restaurant/static/js/main.898cea18.js.map",
     "453.99c1801e.chunk.js.map": "/lemon-restaurant/static/js/453.99c1801e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e3358f89.css",
-    "static/js/main.0aaf4f5d.js"
+    "static/js/main.898cea18.js"
   ]
 }
